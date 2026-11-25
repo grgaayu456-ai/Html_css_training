@@ -1,0 +1,69 @@
+.container1 {
+    display:flex;
+    justify-content: flex-start;
+}
+.Circle1{
+    background-color:palevioletred;
+    padding: 20px;
+    margin: 5px;
+    color: white;
+    border-radius: 50%;
+}
+.container2{
+    display: flex;
+    justify-content: flex-end;
+}
+.Circle2{
+    background-color: blueviolet;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 50%;
+}
+.container3 {
+    display: flex;
+    justify-content: space-around;
+}
+.Circle3{
+    background-color: brown;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 50%;
+}
+.container4{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Circle4{
+    background-color: darkmagenta;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 50%;
+}
+.container5 {
+    display: flex;
+    justify-content: center;
+
+}
+.Circle5{
+    background-color: deeppink;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 50%;
+}
+.container6{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.Circle6{
+    background-color: lightblue;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 50%;
+}

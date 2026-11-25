@@ -1,0 +1,132 @@
+/*Variable name deko*/
+
+:root {
+    --bg: #e8eef2;  /*Backgorund color*/
+    --card: #ffffff;
+    --ink: #1c2b36;
+    --muted: #5d7080;
+    --line: #cfd9e0;
+    --accent: #1f6f78;
+    --accent-dark: #164f56;
+    --tint: #e3f1f2;
+    --danger: maroon;
+}
+*{
+    box-sizing:border-box;
+}
+
+.text-danger{
+    color: var(--danger);
+}
+body {
+    margin: 0;
+    min-height: 100vh; /*Viewport Height*/ /*Device ko 100% screen*/
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 16px;
+    background-color: var(--bg);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--ink);
+}
+.form-card{
+    width: 100%;
+    max-width: 520px;
+    background: var(--card);
+    padding: 36px 32px;
+    border-radius: 16px;
+    /*horizontal vertical blur spread-color*/
+    box-shadow: 0 12px 40px rgba(28, 43, 54, 0.12);
+    border-top: 6px solid var(--accent);
+}
+h1{
+    font-size: 40px;
+    margin: 0 0 4px;
+}
+.sub{
+    margin: 0 0 28px;
+    color: var(--muted);
+    font-size: 19px;
+}
+.field{
+    margin-bottom: 20px; 
+}
+label.title, .legend{
+    display:block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+}
+input[type=text],
+input[type=password],
+input[type="date"],
+textarea{
+    width:100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    font: inherit;
+    color: var(--ink);
+    background-color: #fafcfd;
+    border: 1.5px solid var(--line);
+}
+#district{
+    width:100%;
+    padding: 12px 40px 12px 14px;
+    border-radius: 10px;
+    font: inherit;
+    color: var(--ink);
+    background-color: #fafcfd;
+    border: 1.5px solid var(--line);
+    cursor: pointer;
+}
+input:focus, 
+textarea:focus,
+select:focus{
+    border-color: var(--accent);
+    box-shadow: 0 0 0 4px var(--tint);
+}
+.options input{
+    position:absolute;
+    opacity: 0;
+}
+.option span{
+    display: inline-block;
+    padding: 9px 18px;
+    border: 1.5px solid var(--line);
+    cursor: pointed;
+    font-size: 15px;
+    border-radius:999px;
+}
+.option input:checked + span {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+    transition: all 0.3s;
+
+}
+fieldset{
+    border:none;
+}
+button{
+    padding: 13px;
+    border-radius: 10px;
+    font: inherit;
+    font-weight: 600;
+    cursor:pointer;
+}
+
+button[type="submit"]{
+    background: var(--accent);
+    border: 0;
+    color: #fff;
+}
+
+button[type="clear"]{
+    background-color: transparent;
+    color: var(--ink);
+    border: 1.5px solid var(--line);
+}
+button[type="submit"]:hover{
+    background-color: var(--accent-dark);
+}

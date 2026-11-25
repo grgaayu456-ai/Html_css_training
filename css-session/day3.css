@@ -1,6 +1,6 @@
 body {
-    background-color:palevioletred;
-    
+    background-color: pink;
+
 }
 
 #name {
@@ -8,10 +8,11 @@ body {
 }
 
 .profile {
-    background-color:pink;
-    color:purple;
+    background-color: lightcyan;
+    color: purple;
 
-    width: 400px;/*width of the box*/
+    width: 400px;
+    /*width of the box*/
 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
@@ -19,21 +20,35 @@ body {
     /*border: 4px dotted black;*/
     border-radius: 15px;
 
-    margin: 50px auto;
+    margin: 150px auto;
 
-    padding:45px;/*four side ko padding*/
-    /*padding: 15px 20px 25px 35px; Top, left, Bottom, right ko padding hunxa yesma*/;
-    /*padding: 20px, 30px;*/ /*Top rw right ko padding hunxa yesma*/
-    box-shadow: 20px;
+    padding: 45px;
+    /*four side ko padding*/
+    /*padding: 15px 20px 25px 35px; Top, left, Bottom, right ko padding hunxa yesma*/
+    ;
+    /*padding: 20px, 30px;*/
+    /*Top rw right ko padding hunxa yesma*/
+    box-shadow: 2px 2px 10px 10px gray;
 
 }
-.profile h1{
-    color:rgb(255, 100, 100);
+
+.profile h1 {
+    color: rgb(255, 100, 100);
+    text-align: center;
 }
-#button:hover{
+#button {
+    box-shadow: 2px 2px 2px 2px gray;
+}
+
+#button:hover {
     background-color: gray;
 }
-#box:focus{
-background-color: aquamarine;
-border: 3px solid red;
+
+#box:focus {
+    background-color: lightgoldenrodyellow;
+    border: 3px solid red;
+}
+#box {
+    Border-radius: 4px;
+    box-shadow: 2px 2px 2px 2px gray;
 }
